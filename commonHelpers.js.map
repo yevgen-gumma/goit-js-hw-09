@@ -1,0 +1,1 @@
+{"version":3,"file":"commonHelpers.js","sources":["../src/js/1-gallery.js"],"sourcesContent":["const x = 10;\nconst y = 10;\nconsole.log(x * y);\n"],"names":["x","y"],"mappings":"0uBAAA,MAAMA,EAAI,GACJC,EAAI,GACV,QAAQ,IAAID,EAAIC,CAAC"}
