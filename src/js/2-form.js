@@ -48,6 +48,16 @@ restoreData();
 form.addEventListener('submit', e => {
   e.preventDefault();
 
+  // створюємо змінні для значень полів вводу
+  const userName = form.elements.email.value;
+  const userMessage = form.elements.message.value;
+
+  // перевіряємо чи обидва поля вводу є заповненими
+  if (userName.trim() === '' || userMessage.trim() === '') {
+    alert('Please fill in both fields of the form');
+    return;
+  }
+
   // під час події submit дістаємо дані з Local Storage
   const data = loadFromLS(STORAGE_KEY) || {};
 
